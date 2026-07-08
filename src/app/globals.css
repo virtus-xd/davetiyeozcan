@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Davetiye fontları */
+  --font-sans: var(--font-inter);
+  --font-serif: "Playfair Display", serif;
+  --font-handwriting: var(--font-pinyon-script), "Pinyon Script", cursive;
+
+  /* Davetiye animasyonları */
+  --animate-fade-in: fade-in 1s ease-out;
+  --animate-fade-in-up: fade-in-up 1s ease-out forwards;
+  --animate-slide-up: slide-up 0.8s ease-out forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  background-color: #eaf0e8;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Davetiye tema animasyonları */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Davetiye animation delay utilities */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+.fade-in {
+  animation: fade-in 0.6s ease-out;
+}
