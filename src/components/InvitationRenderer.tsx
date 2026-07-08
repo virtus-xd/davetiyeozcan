@@ -7,6 +7,7 @@ import MusicPlayer from './shared/MusicPlayer';
 import HeroSection from './blossom/HeroSection';
 import GallerySection from './blossom/GallerySection';
 import EventDetailsSection from './blossom/EventDetailsSection';
+import RsvpSection from './blossom/RsvpSection';
 import Footer from './blossom/Footer';
 import type { InvitationData } from './types';
 
@@ -37,6 +38,7 @@ export default function InvitationRenderer({ data }: { data: InvitationData }) {
         <HeroSection />
         <GallerySection />
         <EventDetailsSection />
+        <RsvpSection />
         <Footer />
       </div>
     </InvitationProvider>
