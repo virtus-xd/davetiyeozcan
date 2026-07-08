@@ -55,6 +55,9 @@ export const invitation: InvitationData = {
     credits:      'Sanal Davetiyecim ile hazırlandı',
   },
 
+  // Kurulum: docs/rsvp-kurulum.md — Apps Script web app URL'i buraya yapıştırılır.
+  rsvp: { scriptUrl: '' },
+
   gallery: [
     '/gallery/1.jpeg',
     '/gallery/2.jpeg',

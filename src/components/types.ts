@@ -34,6 +34,8 @@ export interface InvitationData {
   venue: InvitationVenue;
   events: InvitationEvent[];
   footer: InvitationFooter;
+  /** RSVP (LCV) — Google Apps Script webhook URL'i. Boşsa RSVP bölümü render edilmez. */
+  rsvp?: { scriptUrl: string };
   /** Galeri görselleri — en az 3 foto varsa galeri bölümü render edilir */
   gallery?: string[];
 }
