@@ -27,7 +27,7 @@ export default function GallerySection() {
   const row2 = photos.length >= 6 ? [photos[3], photos[4], photos[5]] : null;
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-28 px-4 bg-[#eaf0e8] text-[#333] relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 md:py-28 px-4 bg-[#f4ecdf] text-[#333] relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className={`text-center mb-12 md:mb-16 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <span className="text-[#7a9a6e] tracking-[0.5em] text-[10px] uppercase font-sans block mb-4">

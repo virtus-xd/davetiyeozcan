@@ -28,9 +28,10 @@ export default function HeroSection() {
   }, [invitationData.dateStr]);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#eaf0e8] text-[#333]">
-      <div className="absolute inset-0 bg-[url('/themes/blossom/hero-bg.webp')] bg-cover bg-center bg-no-repeat opacity-90 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#eaf0e8]/80 via-transparent to-[#eaf0e8]/30 pointer-events-none" />
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#f4ecdf] text-[#333]">
+      {/* Bej palet: görsele hafif sıcak ton */}
+      <div className="absolute inset-0 bg-[url('/themes/blossom/hero-bg.webp')] bg-cover bg-center bg-no-repeat opacity-90 pointer-events-none sepia-[.18] saturate-[.75]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#f4ecdf]/80 via-transparent to-[#f4ecdf]/30 pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 animate-fade-in space-y-8 bg-white/70 backdrop-blur-md p-10 md:p-16 rounded-[2rem] border border-white/50 shadow-2xl max-w-4xl w-[90%] md:w-auto mt-16 md:mt-0">
 
@@ -67,7 +68,7 @@ export default function HeroSection() {
             { label: 'SANİYE', value: timeLeft.seconds },
           ].map((item) => (
             <div key={item.label} className="text-center flex flex-col items-center">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl border border-[#dce3d8] shadow-sm flex items-center justify-center bg-white/90 transition-all duration-500 hover:-translate-y-1 hover:shadow-md hover:border-[#8a9a86]">
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl border border-[#e8ddc4] shadow-sm flex items-center justify-center bg-white/90 transition-all duration-500 hover:-translate-y-1 hover:shadow-md hover:border-[#c9b98a]">
                 <span className="text-2xl md:text-3xl font-serif text-[#4c5c48]">{item.value}</span>
               </div>
               <div className="text-[9px] md:text-[10px] text-[#6b7b67] mt-3 font-sans tracking-[0.2em] uppercase">{item.label}</div>

@@ -29,8 +29,9 @@ export default function EventDetailsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 px-4 bg-[#f8faf7] text-[#333] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/themes/blossom/event-bg.webp')] bg-cover bg-center bg-no-repeat opacity-70 pointer-events-none mix-blend-multiply" />
+    <section ref={sectionRef} className="py-24 px-4 bg-[#faf6ec] text-[#333] relative overflow-hidden">
+      {/* Bej palet: yeşil tonlu görseli sepya + düşük doygunlukla sıcak tona çeker */}
+      <div className="absolute inset-0 bg-[url('/themes/blossom/event-bg.webp')] bg-cover bg-center bg-no-repeat opacity-70 pointer-events-none mix-blend-multiply sepia-[.35] saturate-[.6]" />
       <div className="absolute inset-0 bg-white/30 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -49,10 +50,10 @@ export default function EventDetailsSection() {
             return (
               <div
                 key={index}
-                className={`group bg-white/70 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#dce3d8]/50 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+                className={`group bg-white/70 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#e8ddc4]/50 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className="w-16 h-16 bg-[#eaf0e8] rounded-full flex items-center justify-center mx-auto mb-6 text-[#6b7b67] group-hover:scale-110 group-hover:bg-[#dce3d8] transition-all duration-500">
+                <div className="w-16 h-16 bg-[#f4ecdf] rounded-full flex items-center justify-center mx-auto mb-6 text-[#6b7b67] group-hover:scale-110 group-hover:bg-[#e8ddc4] transition-all duration-500">
                   <Icon className="w-6 h-6" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-xl text-[#2c352b] mb-3 uppercase tracking-widest">{event.title}</h3>
@@ -63,11 +64,11 @@ export default function EventDetailsSection() {
           })}
         </div>
 
-        <div className={`bg-white/90 backdrop-blur-md rounded-[2rem] overflow-hidden shadow-2xl shadow-[#dce3d8]/40 border border-white p-2 md:p-4 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
-          <div className="grid md:grid-cols-3 gap-0 border border-[#eaf0e8] rounded-[1.5rem] overflow-hidden">
-            <div className="p-10 flex flex-col justify-center space-y-8 md:border-r border-[#eaf0e8] bg-white">
+        <div className={`bg-white/90 backdrop-blur-md rounded-[2rem] overflow-hidden shadow-2xl shadow-[#e8ddc4]/40 border border-white p-2 md:p-4 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
+          <div className="grid md:grid-cols-3 gap-0 border border-[#f0e7d2] rounded-[1.5rem] overflow-hidden">
+            <div className="p-10 flex flex-col justify-center space-y-8 md:border-r border-[#f0e7d2] bg-white">
               <div className="flex flex-col items-center text-center gap-4">
-                <div className="p-4 bg-[#eaf0e8] rounded-full text-[#6b7b67]">
+                <div className="p-4 bg-[#f4ecdf] rounded-full text-[#6b7b67]">
                   <MapPin className="w-6 h-6" strokeWidth={1.5} />
                 </div>
                 <div>
@@ -85,7 +86,7 @@ export default function EventDetailsSection() {
                     href={invitationData.venue.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-3 bg-[#eaf0e8] text-[#3a3f38] hover:bg-[#dce3d8] transition-colors font-sans text-xs tracking-widest uppercase rounded-full shadow-sm border border-[#c1cdc0]"
+                    className="px-8 py-3 bg-[#f4ecdf] text-[#3a3f38] hover:bg-[#e8ddc4] transition-colors font-sans text-xs tracking-widest uppercase rounded-full shadow-sm border border-[#d9caa5]"
                   >
                     Yol Tarifi Al
                   </a>
