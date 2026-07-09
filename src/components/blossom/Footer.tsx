@@ -21,6 +21,12 @@ export default function Footer() {
           &quot;{invitationData.footer.message}&quot;
         </p>
 
+        {invitationData.footer.families && (
+          <p className="text-[#2c352b] font-serif text-base md:text-lg tracking-[0.2em] uppercase -mt-4">
+            {invitationData.footer.families}
+          </p>
+        )}
+
         <div className="flex justify-center items-center py-4 opacity-60">
           <div className="w-24 h-[1px] bg-[#8a9a86]" />
         </div>

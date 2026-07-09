@@ -86,6 +86,9 @@ export default function RsvpSection() {
             <Heart className="w-5 h-5 text-[#6b7b67]" strokeWidth={1.5} />
             <div className="w-24 h-px bg-gradient-to-l from-transparent to-[#8a9a86]" />
           </div>
+          <p className="text-[#4c5c48] font-serif italic text-base md:text-lg mt-6 max-w-xl mx-auto">
+            Düğünümüze teşrif edip edemeyeceğinizi bildirmenizi rica ederiz.
+          </p>
         </div>
 
         <div

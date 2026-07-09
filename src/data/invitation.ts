@@ -48,6 +48,7 @@ export const invitation: InvitationData = {
 
   footer: {
     message:      'Bu özel günde yanımızda olmanızı çok isteriz.',
+    families:     'İnal ve Uzun Aileleri',
     hashtag:      '#semaözcan',
     contactEmail: '',
     instagramUrl: '',

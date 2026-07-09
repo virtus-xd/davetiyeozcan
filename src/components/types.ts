@@ -16,6 +16,8 @@ export interface InvitationVenue {
 
 export interface InvitationFooter {
   message: string;
+  /** Aile adları — mesajın altında gösterilir (örn. "İnal ve Uzun Aileleri"). Boşsa gizlenir. */
+  families?: string;
   hashtag: string;
   contactEmail: string;
   instagramUrl: string;

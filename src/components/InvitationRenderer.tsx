@@ -33,7 +33,8 @@ export default function InvitationRenderer({ data }: { data: InvitationData }) {
 
   return (
     <InvitationProvider data={data}>
-      <MusicPlayer src="/themes/_shared/music.mp3" startPlaying={musicStarted} />
+      {/* ?v= önbellek kırıcı: mp3 değişince numarayı artır, ziyaretçiler yeni şarkıyı alsın */}
+      <MusicPlayer src="/themes/_shared/music.mp3?v=2" startPlaying={musicStarted} />
       <div className="fade-in">
         <HeroSection />
         <GallerySection />
