@@ -25,6 +25,7 @@ export default function GallerySection() {
 
   const row1 = [photos[0], photos[1], photos[2]];
   const row2 = photos.length >= 6 ? [photos[3], photos[4], photos[5]] : null;
+  const singles = photos.slice(6);
 
   return (
     <section ref={sectionRef} className="py-20 md:py-28 px-4 bg-[#f4ecdf] text-[#333] relative overflow-hidden">
@@ -64,6 +65,21 @@ export default function GallerySection() {
             </div>
           ) : null}
         </div>
+
+        {singles.length > 0 && (
+          <div className="mt-12 md:mt-16 flex flex-col items-center gap-10 md:gap-14">
+            {singles.map((src, i) => (
+              <div
+                key={src}
+                className={`bg-white p-2 rounded-xl shadow-lg w-full max-w-md ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+                style={{ animationDelay: `${0.6 + i * 0.2}s` }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={src} alt="" aria-hidden="true" className="w-full h-auto object-cover rounded-xl" loading="lazy" />
+              </div>
+            ))}
+          </div>
+        )}
 
         <div
           className={`text-center mt-8 md:mt-16 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
