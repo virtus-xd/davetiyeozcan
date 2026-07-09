@@ -1,23 +1,24 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display, Pinyon_Script } from 'next/font/google';
+import { Inter, Playfair_Display, Italianno } from 'next/font/google';
 import './globals.css';
 
+// latin-ext: Türkçe karakterler (ğ, ş, İ, ö...) için gerekli
 const inter = Inter({
   variable: '--font-inter',
-  subsets:  ['latin'],
+  subsets:  ['latin', 'latin-ext'],
   display:  'swap',
 });
 
 const playfair = Playfair_Display({
   variable: '--font-playfair',
-  subsets:  ['latin'],
+  subsets:  ['latin', 'latin-ext'],
   display:  'swap',
   weight:   ['400', '500', '600', '700'],
 });
 
-const pinyonScript = Pinyon_Script({
-  variable: '--font-pinyon-script',
-  subsets:  ['latin'],
+const italianno = Italianno({
+  variable: '--font-italianno',
+  subsets:  ['latin', 'latin-ext'],
   display:  'swap',
   weight:   '400',
 });
@@ -40,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="tr"
-      className={`${inter.variable} ${playfair.variable} ${pinyonScript.variable} h-full`}
+      className={`${inter.variable} ${playfair.variable} ${italianno.variable} h-full`}
     >
       <body className="min-h-full antialiased">
         {children}
