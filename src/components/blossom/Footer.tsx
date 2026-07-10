@@ -22,7 +22,7 @@ export default function Footer() {
         </p>
 
         {invitationData.footer.families && (
-          <p className="text-[#2c352b] font-serif text-base md:text-lg tracking-[0.2em] uppercase -mt-4">
+          <p className="text-[#2c352b] font-cormorant font-semibold text-xl md:text-2xl tracking-[0.15em] uppercase -mt-4">
             {invitationData.footer.families}
           </p>
         )}

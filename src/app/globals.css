@@ -5,6 +5,7 @@
   --font-sans: var(--font-inter);
   --font-serif: "Playfair Display", serif;
   --font-handwriting: var(--font-italianno), "Italianno", cursive;
+  --font-cormorant: var(--font-cormorant-garamond), "Cormorant Garamond", serif;
 
   /* Davetiye animasyonları */
   --animate-fade-in: fade-in 1s ease-out;

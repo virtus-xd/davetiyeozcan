@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display, Italianno } from 'next/font/google';
+import { Inter, Playfair_Display, Italianno, Cormorant_Garamond } from 'next/font/google';
 import './globals.css';
 
 // latin-ext: Türkçe karakterler (ğ, ş, İ, ö...) için gerekli
@@ -23,6 +23,14 @@ const italianno = Italianno({
   weight:   '400',
 });
 
+// Footer'daki aile adları için şık ve okunaklı serif
+const cormorant = Cormorant_Garamond({
+  variable: '--font-cormorant-garamond',
+  subsets:  ['latin', 'latin-ext'],
+  display:  'swap',
+  weight:   ['500', '600'],
+});
+
 export const metadata: Metadata = {
   title:       'Sema & Özcan — Düğün Davetiyesi',
   description: '20 Ağustos 2026 Perşembe, Jade Beach Club Kuşadası. Düğünümüze davetlisiniz.',
@@ -41,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="tr"
-      className={`${inter.variable} ${playfair.variable} ${italianno.variable} h-full`}
+      className={`${inter.variable} ${playfair.variable} ${italianno.variable} ${cormorant.variable} h-full`}
     >
       <body className="min-h-full antialiased">
         {children}

@@ -42,7 +42,7 @@ export const invitation: InvitationData = {
       iconName:    'Calendar',
       title:       'Yemek & Eğlence',
       time:        '21:00',
-      description: 'Birlikte yer, dans eder, sabaha kadar kutlarız.',
+      description: 'Yemek yer, dans eder ve coşkuyla kutlarız.',
     },
   ],
 
