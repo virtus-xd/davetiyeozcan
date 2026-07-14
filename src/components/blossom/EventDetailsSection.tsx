@@ -1,17 +1,8 @@
 'use client';
 
-import { Clock, MapPin, Heart, Calendar } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { useInvitationData } from '../InvitationContext';
-
-const getIcon = (iconName: string) => {
-  switch (iconName) {
-    case 'Clock': return Clock;
-    case 'Heart': return Heart;
-    case 'Calendar': return Calendar;
-    default: return Clock;
-  }
-};
 
 export default function EventDetailsSection() {
   const invitationData = useInvitationData();
@@ -35,33 +26,16 @@ export default function EventDetailsSection() {
       <div className="absolute inset-0 bg-white/30 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className={`text-center mb-20 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#2c352b] mb-6">Program &amp; Mekan</h2>
-          <div className="flex items-center justify-center gap-4">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent to-[#8a9a86]" />
-            <Heart className="w-5 h-5 text-[#6b7b67]" strokeWidth={1.5} />
-            <div className="w-24 h-px bg-gradient-to-l from-transparent to-[#8a9a86]" />
+        <div className={`mb-24 flex justify-center ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
+          <div className="bg-white p-2 rounded-xl shadow-lg w-full max-w-lg">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/themes/blossom/event-details.jpeg"
+              alt="Düğün gecemizin akışı: 19.00 Kokteyl, 20.00 Nikâh Töreni, 21.30 Akşam Yemeği, 23.00 Pasta Seremonisi, 01.00 Kutlamamızın Sonu"
+              className="w-full h-auto rounded-xl"
+              loading="lazy"
+            />
           </div>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
-          {invitationData.events.map((event, index) => {
-            const Icon = getIcon(event.iconName);
-            return (
-              <div
-                key={index}
-                className={`group bg-white/70 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#e8ddc4]/50 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                <div className="w-16 h-16 bg-[#f4ecdf] rounded-full flex items-center justify-center mx-auto mb-6 text-[#6b7b67] group-hover:scale-110 group-hover:bg-[#e8ddc4] transition-all duration-500">
-                  <Icon className="w-6 h-6" strokeWidth={1.5} />
-                </div>
-                <h3 className="font-serif text-xl text-[#2c352b] mb-3 uppercase tracking-widest">{event.title}</h3>
-                <p className="text-[#6b7b67] font-sans text-sm tracking-[0.2em] mb-4">{event.time}</p>
-                <p className="text-[#4c5c48] text-sm font-sans leading-relaxed px-2">{event.description}</p>
-              </div>
-            );
-          })}
         </div>
 
         <div className={`bg-white/90 backdrop-blur-md rounded-[2rem] overflow-hidden shadow-2xl shadow-[#e8ddc4]/40 border border-white p-2 md:p-4 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
