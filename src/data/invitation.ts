@@ -15,14 +15,14 @@ export const invitation: InvitationData = {
   timeDisplay: 'PERŞEMBE, SAAT 19:00',
 
   venue: {
-    name:         'Jade Beach Club',
-    addressLine1: 'Kadınlar Denizi, Yılancı Burnu Mevkii',
+    name:         'Miracle Wedding House',
+    addressLine1: 'Kadınlar Denizi Mah. 4. Sokak No:16',
     addressLine2: 'Kuşadası / Aydın',
     city:         'Kuşadası • Aydın',
     googleMapsUrl:
-      'https://www.google.com/maps/search/?api=1&query=Jade+Beach+Club+Ku%C5%9Fadas%C4%B1',
+      'https://maps.app.goo.gl/diVtR5k4e1CH7BsD7',
     googleMapsEmbed:
-      'https://maps.google.com/maps?q=37.8580604,27.2451131&hl=tr&z=16&output=embed',
+      'https://maps.google.com/maps?q=37.8374405,27.2384547&hl=tr&z=16&output=embed',
   },
 
   events: [

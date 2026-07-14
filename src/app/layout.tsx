@@ -34,7 +34,7 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title:       'Sema & Özcan — Düğün Davetiyesi',
-  description: '20 Ağustos 2026 Perşembe, Jade Beach Club Kuşadası. Düğünümüze davetlisiniz.',
+  description: '20 Ağustos 2026 Perşembe, Miracle Wedding House Kuşadası. Düğünümüze davetlisiniz.',
   // Kişiye özel davetiye — arama motorlarında listelenmesin
   robots: {
     index:  false,
