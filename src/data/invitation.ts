@@ -48,7 +48,7 @@ export const invitation: InvitationData = {
 
   footer: {
     message:      'Bu özel günde yanımızda olmanızı çok isteriz.',
-    families:     'İnal ve Uzun Aileleri',
+    families:     'Uzun ve İnal Aileleri',
     hashtag:      '#semaözcan',
     contactEmail: '',
     instagramUrl: '',
@@ -68,7 +68,7 @@ export const invitation: InvitationData = {
     '/gallery/6.jpeg',
     '/gallery/3.jpeg',
     '/gallery/5.jpeg',
-    '/gallery/7.jpeg',
+    '/gallery/7.jpeg?v=2',
     '/gallery/8.jpeg',
   ],
 };
