@@ -14,7 +14,7 @@ export default function Footer() {
 
       <div className="max-w-4xl mx-auto text-center space-y-10 relative z-10 bg-white/60 backdrop-blur-sm p-10 rounded-3xl border border-white/50 shadow-xl mt-8">
         <h3 className="font-handwriting text-5xl md:text-6xl text-[#2c352b]">
-          {invitationData.brideName} <span className="text-3xl text-[#6b7b67] px-2">&amp;</span> {invitationData.groomName}
+          {invitationData.groomName} <span className="text-3xl text-[#6b7b67] px-2">&amp;</span> {invitationData.brideName}
         </h3>
 
         <p className="text-[#4c5c48] font-serif italic text-lg md:text-xl tracking-wide max-w-2xl mx-auto">

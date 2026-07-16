@@ -30,8 +30,8 @@ export default function EventDetailsSection() {
           <div className="bg-white p-2 rounded-xl shadow-lg w-full max-w-lg">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/themes/blossom/event-details.jpeg"
-              alt="Düğün gecemizin akışı: 19.00 Kokteyl, 20.00 Nikâh Töreni, 21.30 Akşam Yemeği, 23.00 Pasta Seremonisi, 01.00 Kutlamamızın Sonu"
+              src="/themes/blossom/event-details.jpeg?v=2"
+              alt="Düğün gecemizin akışı: 19.00 Kokteyl, 20.00 Nikâh Töreni, 21.30 Akşam Yemeği, 23.00 Pasta Seremonisi, 00.00 After Party, 03.00 Kutlamamızın Sonu"
               className="w-full h-auto rounded-xl"
               loading="lazy"
             />
